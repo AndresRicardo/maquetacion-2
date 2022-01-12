@@ -168,56 +168,104 @@
                 </section>
             </div>
 
+            <!----------------   ASIDE SIDEBAR -->
+
+
             <aside id="sidebar-right">
-                <div class="widget">
+                <div class="widget" id="widget-buscar">
                     <div class="main-title widget-titulo">
                         <h3>BUSCAR</h3>
                     </div>
-                    <input type="search">
+                    <input type="search" placeholder="| L">
                 </div>
 
-                <div class="widget">
-                    <div class="main-title widget-titulo">
+                <div class="widget" id="widget-login">
+                    <div class="main-title widget-titulo" id="titulo-login">
                         <h3>LOGIN</h3>
                     </div>
-                    <form action="">
-                        <input type="text">
-                        <input type="password">
+                    <form action="" id="form-login">
+                        <input type="text" placeholder=" U">
+                        <input type="password" placeholder=" w">
                         <input type="submit" name="Entrar">
                         <button>Limpiar</button>
                     </form>
-                    <p>registrate aqui</p>
-                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <a id="registrate-aqui">Registrate aqui</a>
+                    <a href="#" id="olvidado">¿Has olvidado tu contraseña?</a>
                 </div>
 
                 <div class="widget" id="widget-redes">
                     <div class="main-title widget-titulo">
                         <h3>REDES SOCIALES</h3>
                     </div>
-                    <ul>
-                        <li> <a href="#">t</a></li>
-                        <li> <a href="#">f</a></li>
-                        <li> <a href="#">g</a></li>
-                        <li> <a href="#">y</a></li>
-                    </ul>
+                    <div id="icons">
+                        <a href="#">t</a>
+                        <a href="#">f</a>
+                        <a href="#">g</a>
+                        <a href="#">y</a>
+                    </div>
                 </div>
 
-                <div class="widget" id="widget-redes">
+                <div class="widget" id="widget-colaboradores">
                     <div class="main-title widget-titulo">
                         <h3>COLABORADORES</h3>
                     </div>
-                    <div>
-
+                    <div id="cuadro">
+                        Richi
                     </div>
                 </div>
-
-
             </aside>
-
         </main>
 
-        <footer id="footer">
+        <!----------------   FOTOER DE LA PAGINA -->
 
+        <footer id="footer">
+            <div class="footer-widget" id="footer-widget-1">
+                <div class="small-title">
+                    <h3>MENÚ</h3>
+                </div>
+                <div id="menu-list">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Formación</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-widget" id="footer-widget-2">
+                <div class="small-title">
+                    <h3>¿DONDE ESTAMOS?</h3>
+                </div>
+                <div id="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.13472082400997!2d-76.59716798205004!3d2.455275001004209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300375c8f9ad7b%3A0x1abdfc025091da53!2sHotel%20San%20Mart%C3%ADn%20Popay%C3%A1n!5e0!3m2!1ses-419!2sco!4v1642000750809!5m2!1ses-419!2sco"
+                        width="100%" height="310px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-widget" id="footer-widget-3">
+                <div class="small-title">
+                    <h3>DESARROLLADOR CON</h3>
+                </div>
+                <div id="img-des"><img src="css/img/html5-badge.png" alt="html badget">
+                </div>
+                <div class="small-title">
+                    <h3>OPTIMIZADO PARA</h3>
+                </div>
+                <div id="tecnologias">
+                    <img src="css/img/firefox-icon.png" alt="firefox">
+                    <img src="css/img/chrome.png" alt="chrome">
+                    <img src="css/img/Opera_256x256.png" alt="opera">
+                    <img src="css/img/safari.png" alt="safari">
+                    <img src="css/img/android.png" alt="android">
+                    <img src="css/img/ios.png" alt="ios">
+                </div>
+                <div class="small-title">
+                    <h3>AUTOR</h3>
+                </div>
+                <p>&copy Richi - <a href="https://github.com/AndresRicardo">GitHub Richi</a></p>
+            </div>
         </footer>
 
     </div>

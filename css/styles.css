@@ -20,6 +20,8 @@
     --color-azul-claro: #37bcf9;
     --color-azul-oscuro: #004e88;
     --color-gris-oscuro: #393d3f;
+    --color-bordes: #ccc;
+    --color-sombras: #aaa;
     --font-size: 15px;
 }
 
@@ -49,6 +51,8 @@ body {
 #header {
     width: 100%;
 }
+
+/*---------------   NAVBAR  ---------------*/
 
 #header #navbar {
     width: 100%;
@@ -88,10 +92,13 @@ body {
     color: white;
     margin: auto 25px;
 }
+
+/*---------------   BANNER  ---------------*/
+
 #header #banner {
     width: 80%;
-    height: 110px;
-    margin-bottom: 40px;
+    /* height: 110px; */
+    /* margin-bottom: 40px; */
     background-image: url(img/bakbaner.png);
     margin: 20px auto;
     border: 10px solid white;
@@ -100,7 +107,8 @@ body {
     font-family: "BebasNeue";
     color: white;
     font-weight: lighter;
-    line-height: 90px;
+    /* line-height: 90px; */
+    padding: 20px 10px;
     letter-spacing: 0.2em;
     font-size: 1em;
     box-shadow: 0px 0px 2px #aaa;
@@ -214,37 +222,178 @@ body {
     text-align: center;
     letter-spacing: 0.1em;
     border: 1px solid #ccc;
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 #main #ir-al-blog a {
     text-decoration: none;
     color: var(--color-azul-oscuro);
     font-weight: bold;
 }
-/*---------------   ASIDE  ---------------*/
+/*---------------   ASIDE SIDEBAR  ---------------*/
 #sidebar-right {
     width: 22%;
 }
 #sidebar-right .widget {
     width: 95%;
-    margin: 5px auto;
+    margin: 10px auto;
     font-family: "--font-TrebuchetMS";
 }
 #sidebar-right .widget .widget-titulo {
     margin-bottom: 10px;
 }
 #sidebar-right .widget input {
-    width: 100%;
+    width: 95%;
     height: 25px;
+    border: 1px solid var(--color-bordes);
+    border-radius: 5px;
+    box-shadow: -1px -1px 3px var(--color-sombras);
 }
-#sidebar-right #widget-redes ul {
-    list-style: none;
+#sidebar-right #widget-buscar input::placeholder {
+    font-family: "--font-websymbols";
+    font-weight: bold;
+    text-align: right;
 }
-#sidebar-right #widget-redes ul li a {
+#widget-login {
+    position: relative;
+}
+#sidebar-right #widget-login form input::placeholder {
+    font-family: "--font-websymbols";
+    font-weight: bold;
+    text-align: left;
+}
+#sidebar-right #widget-login form {
+    background-color: white;
+    border: 1px solid var(--color-bordes);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px var(--color-sombras);
+}
+#sidebar-right #widget-login form input[type="submit"] {
+    width: 40%;
+    margin-right: 15px;
+    float: left;
+    height: 35px;
+    margin-top: 10px;
+    background-color: var(--color-azul-claro);
+    color: white;
+    border: 1px solid var(--color-azul-oscuro);
+    border-radius: 5px;
+    box-shadow: -1px -1px 3px var(--color-sombras);
+}
+#sidebar-right #widget-login form button {
+    width: 40%;
+    float: left;
+    height: 35px;
+    margin-top: 10px;
+    background-color: var(--color-azul-claro);
+    color: white;
+    border: 1px solid var(--color-azul-oscuro);
+    border-radius: 5px;
+    box-shadow: -1px -1px 3px var(--color-sombras);
+}
+
+#sidebar-right #widget-login input {
+    margin: 10px 5px;
+}
+#widget-login #olvidado {
+    font-family: "--font-TrebuchetMS";
+    text-decoration: none;
+    color: black;
+}
+
+#widget-redes #icons {
+    width: 90%;
+    background-color: white;
+    border: 1px solid var(--color-bordes);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px var(--color-sombras);
+    padding: 15px 20px;
+}
+#sidebar-right #widget-redes #icons a {
+    display: block;
     font-family: "--font-websymbols";
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-bottom: 10px;
     text-decoration: none;
+}
+#widget-colaboradores #cuadro {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border: 1px solid var(--color-bordes);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px var(--color-sombras);
+    padding: 15px 20px;
 }
 
 /*###############   FOOTER  ###############*/
+#footer {
+    width: 100%;
+    padding: 20px 10%;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-widget {
+    width: 30%;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+#footer-widget-1 #menu-list {
+    padding-left: 20px;
+    font-family: "--font-TrebuchetMS";
+    color: white;
+    line-height: 2.5em;
+}
+#footer-widget-1 #menu-list ul a {
+    width: 100%;
+    color: var(--color-azul-claro);
+    text-decoration: none;
+}
+.small-title {
+    width: 100%;
+    background-color: white;
+    background-image: url(img/pxgray.png);
+    background-repeat: repeat;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px black;
+    text-align: center;
+    font-family: "--font-BebasNeue";
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+}
+#footer-widget-2 #mapa {
+    width: 100%;
+    border-radius: 5px;
+}
+#footer-widget-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer-widget-3 #img-des img {
+    width: 85%;
+    margin-bottom: 10px;
+}
+#footer-widget-3 #tecnologias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#footer-widget-3 #tecnologias img {
+    width: 14%;
+}
+#footer-widget-3 p {
+    color: white;
+    font-family: "--font-TrebuchetMS";
+}
+#footer-widget-3 p a {
+    color: white;
+    font-family: "--font-TrebuchetMS";
+    text-decoration: none;
+}
